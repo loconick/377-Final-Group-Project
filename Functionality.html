@@ -1,23 +1,18 @@
-<!-- public/functionality.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Functionality Page</title>
-  <link rel="stylesheet" href="Main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Functionality Page - Exchange Rate Tracker</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- Header Section -->
   <header>
-    <h1> ExchangeME</h1>
+    Exchange Rate Tracker
   </header>
 
-  <!-- Navbar -->
+  <!-- Navigation Section -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -28,11 +23,89 @@
 
   <!-- Main Content -->
   <main>
-    <h2>Application Functionality</h2>
-    <p>This page will describe the core functionality of the application.</p>
+    <div class="about-main">
+      <!-- Page Introduction -->
+      <section class="about-section">
+        <h2>Core Functionality</h2>
+        <p>
+          This page demonstrates the key functionalities of the Exchange Rate Tracker. You can explore live exchange rates, view daily trends, and analyze historical data.
+        </p>
+      </section>
+
+      <!-- Live Exchange Rates Section -->
+      <section class="about-section">
+        <h3>Live Exchange Rates</h3>
+        <p>
+          Fetch the most up-to-date exchange rates for your selected currencies:
+        </p>
+        <form id="live-rate-form">
+          <label for="base-currency">Base Currency:</label>
+          <select id="base-currency" name="base-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+          <label for="target-currency">Target Currency:</label>
+          <select id="target-currency" name="target-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+          <button type="button" id="fetch-rate">Fetch Rate</button>
+        </form>
+      </section>
+
+      <!-- Daily Exchange Rates Section -->
+      <section class="about-section">
+        <h3>Daily Exchange Rates</h3>
+        <p>
+          View today’s exchange rates for major currencies:
+        </p>
+        <table id="daily-rates-table">
+          <thead>
+            <tr>
+              <th>Currency</th>
+              <th>Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table data will be dynamically inserted -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Historical Data Section -->
+      <section class="about-section">
+        <h3>Historical Exchange Trends</h3>
+        <p>
+          Analyze historical exchange rate data for a specified time range:
+        </p>
+        <form id="historical-data-form">
+          <label for="historical-base-currency">Base Currency:</label>
+          <select id="historical-base-currency" name="historical-base-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+          <label for="historical-target-currency">Target Currency:</label>
+          <select id="historical-target-currency" name="historical-target-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+          <label for="date-range">Select Date Range:</label>
+          <input type="date" id="start-date" name="start-date">
+          <input type="date" id="end-date" name="end-date">
+          <button type="button" id="fetch-historical-data">Show Trends</button>
+        </form>
+        <div id="chart-container">
+          <!-- The Chart.js graph will be rendered here -->
+        </div>
+      </section>
+    </div>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2024 ExchangeME Group - INST 377</p>
   </footer>
