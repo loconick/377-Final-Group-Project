@@ -37,7 +37,7 @@ function convertCurrency() {
     const toCurrency = document.getElementById('to').value;
 
     const apiKey = '422aacebf29458307ae0ba4524dfcc61';
-    const url = `http://data.fixer.io/api/latest?access_key=${apiKey}&symbols=${fromCurrency},${toCurrency}`;
+    const url = `https://data.fixer.io/api/latest?access_key=${apiKey}&symbols=${fromCurrency},${toCurrency}`;
 
     fetch(url)
         .then(response => response.json())
