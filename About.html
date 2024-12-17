@@ -4,21 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Page</title>
-
-  <!-- Link to External CSS and Fonts -->
   <link rel="stylesheet" href="Main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- Header will automatically have slideDown animation -->
   <header>
     <h1 class="poppins-bold">ExchangeME</h1>
   </header>
 
-  <!-- Navbar -->
+  <!-- Nav items will automatically fade in sequentially -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -27,71 +24,50 @@
     </ul>
   </nav>
 
-  <!-- Main Content -->
+  <!-- Main content will automatically fade in -->
   <main>
-    <h2 class="poppins-thin">About ExchangeME</h2>
-    <p>ExchangeME was created to address the challenges of finding accurate, real-time currency exchange rates. Whether you're a business professional managing international transactions or a traveler planning your next trip, we designed ExchangeME to give you quick, reliable, and comprehensive currency information to make informed financial decisions.</p>
-  
-    <h3>The Problem We’re Solving</h3>
-    <p>Travelers and business professionals often struggle to find accurate and up-to-date exchange rates. This can lead to overpaying for currency conversion or making uninformed decisions that affect budgets and financial goals. Our goal is to solve this issue by offering a reliable, easy-to-use platform that gives users access to real-time exchange rates, historical data, and customized alerts for favorable currency rates.</p>
+    <div class="about-main">
+      <section class="about-section">
+        <h2 class="poppins-thin">About ExchangeME</h2>
+        <p>ExchangeME was created to address the challenges of finding accurate, real-time currency exchange rates. Whether you're a business professional managing international transactions or a traveler planning your next trip, we designed ExchangeME to give you quick, reliable, and comprehensive currency information to make informed financial decisions.</p>
+      </section>
     
-    <h3>Our Mission</h3>
-    <p>At ExchangeME, our mission is to help users access the best exchange rates and empower them to make better financial decisions. By providing accurate and real-time data, along with tools like historical charts and customizable alerts, we aim to help people save money and plan effectively for both short-term and long-term financial goals.</p>
-    
-    <h3>Project Overview</h3>
-    <p>The ExchangeME platform is built with simplicity and efficiency in mind. Through a sleek and user-friendly interface, users can easily convert currencies, track historical trends, and set up alerts to receive notifications when exchange rates hit desirable levels. The platform relies on the <strong>Fixer.io API</strong> for real-time currency data.</p>
-  
-    <h3>Features of the ExchangeME Platform</h3>
-    <ul>
-      <li><strong>Real-Time Exchange Rates:</strong> Get accurate, up-to-date exchange rates sourced from trusted financial data providers.</li>
-      <li><strong>Currency Converter:</strong> Convert any amount between selected currencies with ease and accuracy.</li>
-      <li><strong>Historical Data:</strong> Track and analyze currency performance over time with interactive, easy-to-read charts.</li>
-      <li><strong>Alert System:</strong> Set customized alerts for specific exchange rate thresholds and receive notifications when rates meet your criteria.</li>
-    </ul>
-  
-    <h3>Our Target Audience</h3>
-    <p>ExchangeME is designed to serve a wide range of users who deal with currency exchanges:</p>
-    <ul>
-      <li><strong>Travelers:</strong> Easily manage currency conversions for international trips and avoid overpaying at exchange kiosks.</li>
-      <li><strong>Business Professionals:</strong> Stay on top of currency fluctuations to ensure you’re making the most informed financial decisions in global transactions.</li>
-      <li><strong>Anyone Dealing with Foreign Currency:</strong> Get access to reliable rates for personal or business transactions and make more informed choices when converting money.</li>
-    </ul>
-  
-    <h3>Technological Stack</h3>
-    <p>Our platform uses modern technologies to ensure optimal performance and a smooth user experience:</p>
-    <ul>
-      <li><strong>Fixer.io API:</strong> Provides real-time currency data and conversion rates from reliable sources.</li>
-      <li><strong>SCSS:</strong> Makes it easier to style the application efficiently, allowing for better maintainability and scalability of the code.</li>
-      <li><strong>Supabase:</strong> A powerful backend-as-a-service that stores user preferences and historical rate data.</li>
-      <li><strong>Node.js:</strong> Powers our backend server, handling all requests, processing data, and communicating with external APIs.</li>
-    </ul>
-  
-    <h3>Future Plans</h3>
-    <p>We’re excited to expand the ExchangeME platform with additional features, including:</p>
-    <ul>
-      <li>Support for more currencies and countries</li>
-      <li>Enhanced alert system with greater customization options</li>
-      <li>User account management for better tracking of personal preferences and historical data</li>
-    </ul>
-  
-    <h3>Meet the Team</h3>
-    <p>The ExchangeME platform was developed by a passionate group of students from the INST 377 class. Here are the team members who made it all happen:</p>
-    <ul>
-      <li><strong>Nicholas Chassagnez</li>
-      <li><strong>Eyosyas Kefelegne</li>
-      <li><strong>Ivana Loffa Rincon</li>
-      <li><strong>Tanna Nguyen</li>
-      <li><strong>Kirubel Yadetie</li>
-    </ul>
+      <section class="about-section">
+        <h3>The Problem We're Solving</h3>
+        <p>Travelers and business professionals often struggle to find accurate and up-to-date exchange rates. This can lead to overpaying for currency conversion or making uninformed decisions that affect budgets and financial goals. Our goal is to solve this issue by offering a reliable, easy-to-use platform that gives users access to real-time exchange rates, historical data, and customized alerts for favorable currency rates.</p>
+      </section>
+      
+      <section class="about-section">
+        <h3>Our Mission</h3>
+        <p>At ExchangeME, our mission is to help users access the best exchange rates and empower them to make better financial decisions. By providing accurate and real-time data, along with tools like historical charts and customizable alerts, we aim to help people save money and plan effectively for both short-term and long-term financial goals.</p>
+      </section>
+      
+      <section class="about-section">
+        <h3>Features of the ExchangeME Platform</h3>
+        <ul>
+          <li><strong>Real-Time Exchange Rates:</strong> Get accurate, up-to-date exchange rates sourced from trusted financial data providers.</li>
+          <li><strong>Currency Converter:</strong> Convert any amount between selected currencies with ease and accuracy.</li>
+          <li><strong>Historical Data:</strong> Track and analyze currency performance over time with interactive, easy-to-read charts.</li>
+          <li><strong>Alert System:</strong> Set customized alerts for specific exchange rate thresholds and receive notifications when rates meet your criteria.</li>
+        </ul>
+      </section>
+      
+      <section class="about-section">
+        <h3>Meet the Team</h3>
+        <ul>
+          <li><strong>Nicholas Chassagnez</strong></li>
+          <li><strong>Eyosyas Kefelegne</strong></li>
+          <li><strong>Ivana Loffa Rincon</strong></li>
+          <li><strong>Tanna Nguyen</strong></li>
+          <li><strong>Kirubel Yadetie</strong></li>
+        </ul>
+      </section>
+    </div>
   </main>
-  
 
-  <!-- Footer -->
+  <!-- Footer will automatically have slideUp animation -->
   <footer>
     <p>&copy; 2024 ExchangeME Group - INST 377</p>
   </footer>
-
 </body>
-</html>
-
 </html>

@@ -1,4 +1,3 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +7,15 @@
   <link rel="stylesheet" href="Main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- Header will automatically have slideDown animation -->
   <header>
     <h1>ExchangeME</h1>
   </header>
 
-  <!-- Navbar -->
+  <!-- Nav items will automatically fade in sequentially -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -26,40 +24,42 @@
     </ul>
   </nav>
 
-  <!-- Main Content -->
+  <!-- Main content will automatically fade in -->
   <main>
-    <h2 class="poppins-thin">Welcome to ExchangeME!</h2>
-    <p>ExchangeME is your go-to platform for real-time currency exchange rates, historical trends, and personalized alerts. Whether you're planning a trip, managing international transactions, or simply curious about current exchange rates, we've got you covered!</p>
-    
-    <h3>Key Features</h3>
-    <ul>
-      <li><strong>Real-Time Exchange Rates:</strong> Access up-to-date exchange rates for major currencies sourced from trusted financial providers.</li>
-      <li><strong>Currency Conversion Tool:</strong> Convert any amount between currencies with a simple and intuitive interface.</li>
-      <li><strong>Alert System:</strong> Set custom notifications for when exchange rates reach a specific level, ensuring you never miss a great opportunity.</li>
-      <li><strong>Historical Rate Data:</strong> Visualize exchange rate trends over time with interactive charts to help make better financial decisions.</li>
-    </ul>
-  
-    <h3>How It Works</h3>
-    <p>Our platform allows users to select their base and target currencies, enter an amount, and instantly see the conversion value. You can also explore historical data, and set up personalized alerts to stay updated on the latest exchange rate fluctuations.</p>
-  
-    <h3>Technologies Behind the Platform</h3>
-    <p>We’ve built ExchangeME using a combination of modern technologies to ensure reliability and responsiveness:</p>
-    <ul>
-      <li><strong>Fixer.io API:</strong> Provides real-time, accurate exchange rate data from trusted sources.</li>
-      <li><strong>SCSS:</strong> Helps streamline the styling of the platform with enhanced flexibility and scalability.</li>
-      <li><strong>Supabase:</strong> Stores historical rate data and user preferences for a personalized experience.</li>
-      <li><strong>Backend Server:</strong> Handles interactions with APIs and manages data transactions.</li>
-    </ul>
-  
-    <h3>Start Using ExchangeME Today</h3>
-    <p>Whether you're traveling, doing business internationally, or just curious about currencies, ExchangeME is here to help you make informed decisions. Get started now by selecting your base and target currencies!</p>
+    <div class="about-main">
+      <h2 class="poppins-thin">Welcome to ExchangeME!</h2>
+      <p>ExchangeME is your go-to platform for real-time currency exchange rates, historical trends, and personalized alerts. Whether you're planning a trip, managing international transactions, or simply curious about current exchange rates, we've got you covered!</p>
+      
+      <section class="about-section">
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Real-Time Exchange Rates:</strong> Access up-to-date exchange rates for major currencies sourced from trusted financial providers.</li>
+          <li><strong>Currency Conversion Tool:</strong> Convert any amount between currencies with a simple and intuitive interface.</li>
+          <li><strong>Alert System:</strong> Set custom notifications for when exchange rates reach a specific level.</li>
+          <li><strong>Historical Rate Data:</strong> Visualize exchange rate trends over time with interactive charts.</li>
+        </ul>
+      </section>
+      
+      <section class="about-section">
+        <h3>How It Works</h3>
+        <p>Our platform allows users to select their base and target currencies, enter an amount, and instantly see the conversion value. You can also explore historical data, and set up personalized alerts to stay updated on the latest exchange rate fluctuations.</p>
+      </section>
+      
+      <section class="about-section">
+        <h3>Technologies Behind the Platform</h3>
+        <ul>
+          <li><strong>Fixer.io API:</strong> Provides real-time, accurate exchange rate data from trusted sources.</li>
+          <li><strong>SCSS:</strong> Helps streamline the styling of the platform with enhanced flexibility and scalability.</li>
+          <li><strong>Supabase:</strong> Stores historical rate data and user preferences for a personalized experience.</li>
+          <li><strong>Backend Server:</strong> Handles interactions with APIs and manages data transactions.</li>
+        </ul>
+      </section>
+    </div>
   </main>
-  
 
-  <!-- Footer -->
+  <!-- Footer will automatically have slideUp animation -->
   <footer>
     <p>&copy; 2024 ExchangeME Group - INST 377</p>
   </footer>
-
 </body>
 </html>
