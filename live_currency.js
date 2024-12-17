@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    const apiKey = '24ea1999f203d034bb14dc4d0493ef60';
+    const apiKey = '422aacebf29458307ae0ba4524dfcc61';
     const url = `https://data.fixer.io/api/symbols?access_key=${apiKey}`;
 
     fetch(url)
