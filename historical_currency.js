@@ -1,4 +1,4 @@
-import supabase from './supabaseClient.js';
+import historic_supabase from './historical_supabaseClient.js';
 
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('fetch-historical-data').addEventListener('click', async () => {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             // Query Supabase for historical exchange rates
-            const { data, error } = await supabase
+            const { data, error } = await historic_supabase
                 .from('historical_rates') // Replace with your actual table name
                 .select('date, rate')
                 .eq('base_currency', baseCurrency)
