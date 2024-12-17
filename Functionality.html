@@ -72,9 +72,12 @@
             
             <button type="button" onclick="showCurrency()">Fetch Major Currency Exchange Rate</button>
         </form>
-    
-        <h2 id="result"></h2> <!-- Result will be displayed here -->
-    </section>  
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="daily_exchange_currency.js"></script>
+
+        <h2 id="daily_exchange_result" style="color: black; font-size: 18px;"></h2>
+      </section>  
 
       <!-- Historical Exchange Trends Section -->
       <section class="about-section">
