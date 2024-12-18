@@ -1,0 +1,123 @@
+/* styles/main.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+  font-family: "Poppins", sans-serif; /* Apply Poppins font to all text */
+}
+
+header {
+  background-color: #073f29;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0); /* Start from a smaller scale */
+}
+
+
+nav {
+  background-color: #097009;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-main {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.about-section {
+  margin-bottom: 30px;
+}
+
+.about-section h2, .about-section h3 {
+  color: #073f29;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.features-list, .audience-list, .tech-list, .future-goals {
+  padding-left: 20px;
+  font-size: 1.1rem;
+}
+
+.features-list li, .audience-list li, .tech-list li, .future-goals li {
+  margin-bottom: 10px;
+}
+
+ul li strong {
+  color: #097009;
+}
+
+footer {
+  background-color: #073f29;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 20px;
+  }
+  
+  .about-main {
+    padding: 20px;
+  }
+}
