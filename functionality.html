@@ -34,25 +34,38 @@
           This page demonstrates the key functionalities of the Exchange Rate Tracker. You can explore live exchange rates, view daily trends, and analyze historical data.
         </p>
         
-      <!-- Live Exchange Rates Section -->
-      <h3>Live Exchange Rates</h3>
-      <p>
-        Fetch the most up-to-date exchange rates for your selected currencies:
-      </p>
-      <label for="amount">Amount:</label>
-      <input type="number" id="amount" value="1">
-  
-      <label for="from">Base Currency:</label>
-      <select id="from"></select>
-  
-      <label for="to">Target Currency:</label>
-      <select id="to"></select>
-  
-      <button onclick="convertCurrency()">Fetch Rate</button>
-  
-      <div id="result">
-          <h2 style="color: black; font-size: 18px;"></h2>  
+        <!-- Live Exchange Rates Section -->
+        <h3>Live Exchange Rates</h3>
+        <p>
+          Fetch the most up-to-date exchange rates for your selected currencies:
+        </p>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" value="1">
+        
+        <label for="from">Base Currency:</label>
+        <select id="from">
+          <!-- Populate with options -->
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <!-- Add more currencies as needed -->
+        </select>
+        
+        <label for="to">Target Currency:</label>
+        <select id="to">
+          <!-- Populate with options -->
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <!-- Add more currencies as needed -->
+        </select>
+        
+        <button onclick="convertCurrency()">Fetch Rate</button>
+        
+        <div id="result">
+          <h2 id="exchange-rate-result" style="color: black; font-size: 18px;">Converted Amount: </h2>  
         </div>
+
         
      
         <!-- Link to JavaScript File -->
