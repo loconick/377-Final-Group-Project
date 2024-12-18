@@ -132,17 +132,15 @@ button:active {
 }
 
 /* Results Animation */
-#result, #daily_exchange_result {
-  display: block;
-  visibility: visible;
-  opacity: 1;
-  background-color: #f8f9fa;
-  border: 1px solid #ddd;
+#result,
+#daily_exchange_result {
   margin-top: 20px;
   padding: 15px;
+  background-color: #f8f9fa;
   border-radius: 4px;
+  border: 1px solid #ddd;
+  animation: fadeIn 0.5s ease-out;
 }
-
 
 
 
