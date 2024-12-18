@@ -132,46 +132,6 @@
     <p>&copy; 2024 ExchangeME Group - INST 377</p>
   </footer>
 
-  <!-- JavaScript -->
-  <script>
-    // Save input values in localStorage
-    document.addEventListener("DOMContentLoaded", () => {
-      const inputs = document.querySelectorAll("input, select");
-      inputs.forEach((input) => {
-        const savedValue = localStorage.getItem(input.id);
-        if (savedValue) input.value = savedValue;
-
-        input.addEventListener("input", () => {
-          localStorage.setItem(input.id, input.value);
-        });
-      });
-    });
-
-    // Example function for "Live Exchange Rates"
-    function convertCurrency() {
-      const amount = document.getElementById("amount").value;
-      const from = document.getElementById("from").value;
-      const to = document.getElementById("to").value;
-
-      if (amount && from && to) {
-        // Replace with your API logic
-        const result = document.getElementById("result");
-        result.innerText = `${amount} ${from} = X ${to} (API response here)`;
-      }
-    }
-
-    // Example function for "Daily Exchange Rates"
-    function showCurrency() {
-      const date = document.getElementById("date-selection").value;
-      const currency = document.getElementById("currency-exchange").value;
-
-      if (date && currency) {
-        // Replace with your API logic
-        alert(`Showing rates for ${currency} on ${date}`);
-      }
-    }
-  </script>
-
 
 </body>
 </html>
