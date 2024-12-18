@@ -32,6 +32,7 @@
         <p>
           This page demonstrates the key functionalities of the Exchange Rate Tracker. You can explore live exchange rates, view daily trends, and analyze historical data.
         </p>
+      <div id="result">
       <!-- Live Exchange Rates Section -->
       <h3>Live Exchange Rates</h3>
       <p>
@@ -52,11 +53,11 @@
       <!-- Link to JavaScript File -->
        
       <script src="live_currency.js"></script>  
-      
+    </div>
     </section>
         
 
-
+    <div id ="daily_exchange_result">
       <section class="about-section">
         <h3>Daily Exchange Rates</h3>
         <p>View today’s exchange rates for major currencies</p>
@@ -78,14 +79,15 @@
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script type="module" src="daily_exchange_currency.js"></script>
-
+      
         <h2 id="daily_exchange_result" style="color: black; font-size: 18px;"></h2>
       </section>  
+    </div>
 
       <!-- Historical Exchange Trends Section -->
       <section class="about-section">
-        <h3>Historical Exchange Trends</h3>
-        <p>Analyze historical exchange rate data for a specified time range:</p>
+        <h3>2024 Exchange Trends</h3>
+        <p>Analyze historical exchange rate data from January to March</p>
         <form id="historical-data-form">
           <!-- Currency Selection -->
           <label for="base-currency">Base Currency:</label>
@@ -120,9 +122,7 @@
         <div>
           <canvas id="chart-container" style="width: 100%; height: 400px;"></canvas>
         </div>
-        
       </section>
-
     </div>
   </main>
 
