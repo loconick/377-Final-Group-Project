@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Functionality Page - Exchange Rate Tracker</title>
-  <link rel="stylesheet" href="Main.css">
+  <link rel="stylesheet" href="main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -33,76 +33,94 @@
         <p>
           This page demonstrates the key functionalities of the Exchange Rate Tracker. You can explore live exchange rates, view daily trends, and analyze historical data.
         </p>
-      </section>
-
+      <div id="result">
+        
       <!-- Live Exchange Rates Section -->
-      <section class="about-section">
-        <h3>Live Exchange Rates</h3>
-        <p>Fetch the most up-to-date exchange rates for your selected currencies:</p>
+      <h3>Live Exchange Rates</h3>
+      <p>
+        Fetch the most up-to-date exchange rates for your selected currencies:
+      </p>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" value="1">
+  
+      <label for="from">Base Currency:</label>
+      <select id="from"></select>
+  
+      <label for="to">Target Currency:</label>
+      <select id="to"></select>
+  
+      <button onclick="convertCurrency()">Fetch Rate</button>
+  
+      <h2 id="result" style="color: black; font-size: 18px;"></h2>  
+      <!-- Link to JavaScript File -->
+       
+      <script src="live_currency.js"></script>  
+    </div>
+    </section>
+        
 
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" value="1">
-
-        <label for="from">Base Currency:</label>
-        <select id="from"></select>
-
-        <label for="to">Target Currency:</label>
-        <select id="to"></select>
-
-        <button onclick="convertCurrency()">Fetch Rate</button>
-
-        <h2 id="conversion-result" style="color: black; font-size: 18px;"></h2>
-      </section>
-
-      <!-- Daily Exchange Rates Section -->
+    <div id ="daily_exchange_result">
       <section class="about-section">
         <h3>Daily Exchange Rates</h3>
-        <p>View today’s exchange rates for major currencies:</p>
+        <p>View today’s exchange rates for major currencies</p>
         <form id="live-rate-form">
-          <label for="date-selection_exchange">Select Date:</label>
-          <input type="date" id="date-selection" name="date-selection">
-
-          <label for="Currency Exchange">Currency Exchange Rate:</label>
-          <select id="Currency-Exchange-Selection">
-            <!-- Hardcoded Options -->
-            <option value="euro_to_usd">Euro to USD</option>
-            <option value="uk_pound_to_usd">UK Pound to USD</option>
-            <option value="canadian_dollar_to_usd">Canadian Dollar to USD</option>
-            <option value="mexican_peso_to_usd">Mexican Peso to USD</option>
-          </select>
-
-          <button type="button" onclick="showCurrency()">Fetch Major Currency Exchange Rate</button>
+            <label for="date-selection_exchange">Select Date:</label>
+            <input type="date" id="date-selection" name="date-selection">
+    
+            <label for="Currency Exchange">Currency Exchange Rate:</label>
+            <select id="Currency Exchange Selection">
+                <!-- Hardcoded Options -->
+                <option value="euro_to_usd">Euro to USD</option>
+                <option value="uk_pound_to_usd">UK Pound to USD</option>
+                <option value="canadian_dollar_to_usd">Canadian Dollar to USD</option>
+                <option value="mexican_peso_to_usd">Mexican Peso to USD</option>
+            </select>
+            
+            <button type="button" onclick="showCurrency()">Fetch Major Currency Exchange Rate</button>
         </form>
-
-        <h2 id="daily-exchange-result" style="color: black; font-size: 18px;"></h2>
-      </section>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="daily_exchange_currency.js"></script>
+      
+        <h2 id="daily_exchange_result" style="color: black; font-size: 18px;"></h2>
+        <div id="result"></div>
+      </section>  
+    </div>
 
       <!-- Historical Exchange Trends Section -->
       <section class="about-section">
         <h3>2024 Exchange Trends</h3>
-        <p>Analyze historical exchange rate data from January to March:</p>
+        <p>Analyze historical exchange rate data from January to March</p>
         <form id="historical-data-form">
           <!-- Currency Selection -->
           <label for="base-currency">Base Currency:</label>
           <select id="base-currency" name="historical-base-currency">
             <option value="ARS">ARS</option>
+            <!-- <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="CHF">CHF - Swiss Franc</option> -->
           </select>
 
           <label for="target-currency">Target Currency:</label>
           <select id="target-currency" name="historical-target-currency">
             <option value="USD">USD</option>
+            <!-- <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="CHF">CHF - Swiss Franc</option> -->
           </select>
 
           <!-- Date Range Selection -->
           <label for="start-date">Start Date:</label>
           <input type="date" id="start-date" name="start-date">
-
+          
           <label for="end-date">End Date:</label>
           <input type="date" id="end-date" name="end-date">
-
+          
           <button type="button" id="fetch-historical-data">Show Trends</button>
         </form>
-
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="historical_currency.js"></script> 
         <!-- Chart Container -->
         <div>
           <canvas id="chart-container" style="width: 100%; height: 400px;"></canvas>
@@ -110,7 +128,6 @@
       </section>
     </div>
   </main>
-</body>
 
   <!-- Footer Section -->
   <footer>
@@ -120,6 +137,48 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
